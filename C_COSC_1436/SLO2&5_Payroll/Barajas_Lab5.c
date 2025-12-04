@@ -105,3 +105,4 @@ void gradeCount(char letter[SIZE]) {
     printf("Students with F's : %d\n", fCount);
 
 }
+
