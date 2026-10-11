@@ -1,0 +1,77 @@
+:root {
+    --interface-color: #f7f7f7; /*Color of the Footer and Header*/
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header, footer {
+    background-color: var(--interface-color);
+    padding: 20px 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #004DB3;
+}
+
+main {
+    min-height: 300px;
+    & > * {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/*This is the div where the images are displayed.*/
+#results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 85%;
+    &.image {
+        width: 200px;
+        margin: 15px;
+    }
+}
+
+#image_details {
+    background-color: var(--interface-color);
+    width: 80%;
+    padding: 20px;
+    & img {
+        width: 300px;
+    }
+}
+
+h2 {
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    justify-content: center;
+    & > * {
+        display: block;
+        margin: 10px 30px;
+        width: 42%;
+        min-width: 200px;
+    }
+}
+
+/*Text in the footer explaining some caveats about the website.*/
+.disclaimer {
+    font-style: italic;
+    text-align: center;
+}
+
+address {
+    paddding: 0%;
+}
